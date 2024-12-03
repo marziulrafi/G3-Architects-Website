@@ -108,22 +108,70 @@ main {
     font-weight: 700;
 }
 
-/* Facts Section */
+/* Features styles */
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img {
+    height: 90%;
+    margin-left: 90px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p {
+    font-size: 1.5rem;
+}
+
+/* Facts styles */
 .facts-card-container {
     display: flex;
     justify-content: space-around;
 }
+
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
     padding: 30px;
 }
+
 .facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
+
 .facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
@@ -135,15 +183,39 @@ main {
 .sponsors {
     text-align: center;
 }
+
 .sponsors-img-container {
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
+    margin-bottom: 100px;
 }
+
 .sponsors-img-container img {
     width: 165px;
+}
+
+.footer-layout {
+    width: 1440px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF4E7;
+    justify-self: center;
+}
+
+.footer-layout p {
+    color: #424242;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 40px;
+    
 }
 
 /* Responsive */
@@ -153,20 +225,33 @@ main {
     }
 
     nav,
-    .teams-container, .facts-card-container
-    {
+    .teams-container,
+    .features,
+    .facts-card-container {
         flex-direction: column;
+    }
+
+    .feature-img img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
         grid-template-columns: 1fr;
     }
 
-    .teams-content, .facts-card-container,
+    .teams-content,
+    .facts-card-container,
     .sponsors-img-container {
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .facts-card-container {
         gap: 20px;
     }
@@ -178,7 +263,9 @@ main {
         padding: 50px;
     }
 
-    nav, .teams-container,
+    nav,
+    .teams-container,
+    .features,
     .sponsors-img-container {
         flex-direction: column;
     }
