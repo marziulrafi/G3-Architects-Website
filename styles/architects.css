@@ -227,7 +227,9 @@ main {
     nav,
     .teams-container,
     .features,
-    .facts-card-container {
+    .facts-card-container,
+    .sponsors-img-container,
+    .footer-layout {
         flex-direction: column;
     }
 
@@ -266,7 +268,8 @@ main {
     nav,
     .teams-container,
     .features,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .footer-layout {
         flex-direction: column;
     }
 }
